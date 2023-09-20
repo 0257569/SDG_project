@@ -1,0 +1,21 @@
+:root{
+    --principal:#b0e783;
+    --complementario:#ba83e7;
+    font-size: 16px;
+    background-color: #b0e783;
+}
+body{
+    background-color: #d3f2b4;
+}
+nav{
+    color: #ba83e7;
+    background-color: #b0e783;
+}
+
+.news-section{
+    background-color: wheat;
+}
+.container{
+    padding: 1%;
+    max-width: 75rem;
+}
