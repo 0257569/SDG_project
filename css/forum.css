@@ -11,11 +11,6 @@ body{
     background-color: var(--graded07);
 }
 
-nav{
-    color: #ba83e7;
-    background-color: var(--main);
-}
-
 .news-section{
     background-color: wheat;
 }

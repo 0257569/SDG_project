@@ -12,22 +12,6 @@ header {
     text-align: center;
 }
 
-nav {
-    background-color: #63993a;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-    margin: 0 20px;
-}
-
 h2 {
     color: #81b757;
     font-size: 24px;
