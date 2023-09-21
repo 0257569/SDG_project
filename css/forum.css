@@ -5,19 +5,38 @@
     --graded07:#eaf8d5;
     --graded08:#fffff6;
     font-size: 16px;
-    background-color: #b0e783;
+    background-color: var(--graded07);
 }
 body{
     background-color: var(--graded07);
 }
 
-.news-section{
-    background-color: wheat;
-}
-
 .container{
     padding: 1%;
     max-width: 75rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--graded08);
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-align{
+    text-align: end;
+}
+
+.btn-label {
+	position: relative;
+	left: -12px;
+	display: inline-block;
+	padding: 6px 12px;
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px 0 0 3px;
+}
+
+.btn-labeled {
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 .btn-addpost{
@@ -39,4 +58,8 @@ body{
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+}
+
+.text-comment{
+    font-size: 0.8rem;
 }
