@@ -1,9 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
+:root{
+    --main:#b0e783;
+    --complementary:#ba83e7;
+    --complementary02: #9749b8;
+    --graded07:#eaf8d5;
+    --graded08:#fffff6;
     font-size: 16px;
+    background-color: #b0e783;
+}
+body{
+    background-color: var(--graded07);
 }
 
-body{
-    
+nav{
+    color: #ba83e7;
+    background-color: var(--main);
+}
+
+.news-section{
+    background-color: wheat;
+}
+
+.container{
+    padding: 1%;
+    max-width: 75rem;
+}
+
+.btn-addpost{
+    background-color: var(--complementary);
+    border-color: var(--complementary);
+}
+
+.btn-addpost:hover{
+    background-color: var(--complementary02);
+    border-color: var(--complementary02);
+}
+
+.pic-post{
+    width: 5rem;
+    height: 5rem;
+}
+
+.pic-comment{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
 }
