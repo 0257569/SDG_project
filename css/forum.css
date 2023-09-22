@@ -11,7 +11,7 @@ body{
     background-color: var(--graded07);
 }
 
-.container{
+.containerVisual{
     padding: 1%;
     max-width: 75rem;
     margin: 1rem auto;
@@ -44,10 +44,15 @@ body{
     border-color: var(--complementary);
 }
 
-.btn-addpost:hover{
+
+.btn-addpost:hover,
+.btn-addpost:active {
     background-color: var(--complementary02);
     border-color: var(--complementary02);
+    color: #fff; /* Set text color for better visibility on the background */
+    outline: none; /* Remove the blue outline when focused (optional) */
 }
+
 
 .pic-post{
     width: 5rem;
