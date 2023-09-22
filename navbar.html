@@ -1,22 +1,36 @@
-<nav class="nav">
-    <div class="nav-logo">
-        <p>Health & Wellness</p>
-    </div>
-    <div class="nav-menu" id="navMenu">
-        <ul>
-            <li><a href="index.html" class="link">Home</a></li>
-            <li><a href="forum.html" class="link">Forum</a></li>
-            <li><a href="login_singup.html" class="link">Video Game</a></li>
-            <li><a href="newsletter.html" class="link">Newspaper</a></li>
-            <li><a href="login_singup.html" class="link">Login</a></li>
+<!DOCTYPE html>
+<html lang="en">
 
-        </ul>
-    </div>
-    <div class="nav-button">
-        <button class="btn white-btn" id="loginBtn" onclick="login()">Sign In</button>
-        <button class="btn" id="registerBtn" onclick="register()">Sign Up</button>
-    </div>
-    <div class="nav-menu-btn">
-        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
-    </div>
-</nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <title>navbar</title>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>Health & Wellness</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="forum.html" class="link">Forum</a></li>
+                <li><a href="login_singup.html" class="link">Video Game</a></li>
+                <li><a href="newsletter.html" class="link">Newspaper</a></li>
+                <li><a href="login_singup.html" class="link">Login</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="login_singup.html" class="login-link">
+                <img src="img_login/Login.png" alt="Login" class="login-image">
+            </a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+</body>
+
+</html>
