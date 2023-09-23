@@ -2,23 +2,118 @@
     --principal:#b0e783;
     --complementario:#ba83e7;
     --fakeWhite:#fffff6;
-
     font-size: 16px;
+}
+.carousel{
+    display: block;
+    position: relative;
+    visibility: visible;
+    background-image: url(imgs/newsletter/background_carousel.jpg);
+}
+.newsSection{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.sectionNews{
+    z-index: 0;
+    position: relative;
+    display: block;
+    background-color: #b0e783;
+}
+
+.masterContainer{
+    position: relative;
+}
+.oracleInspiration{
+    visibility: visible;
+}
+.carouselImage{
+    z-index: -1;
+}
+.carouselTextBox{
+    z-index: 5;
+    width: 300px;
+    position: absolute;
+    display: block;
+    visibility: visible;
     background-color: white;
 }
-.prueba{
-    background-color: var(--fakeWhite);
-    color: black;
-}
-body{
-    background-color:  #eaf8d5;;
+@media (max-width: 576px) {
+    .carousel{
+        height: 13rem;
+        background-color: wheat;
+    }
 }
 
-.news-section{
-    background-color: wheat;
+@media (min-width: 576px) {
+    .carousel{
+        height: 10rem;
+        background-color: white;
+    }
 }
-.container{
-    background-color: var(--fakeWhite);
-    padding: 5%;
-    max-width: 75rem;
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .carousel{
+        height: 18rem;
+        background-color: aqua;
+    }
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .carousel{
+        height: 26rem;
+        background-color: black;
+    }
+}
+/* 
+// X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .carousel{
+        height: 32rem;
+        background-color: burlywood;
+    }
+}
+/* 
+// XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .carousel{
+        height: 32rem;
+        background-image: url(../imgs/newsletter/aesthetic.jpg);
+        background-position-y: bottom;
+    }
+    .sectionNews{
+        position: absolute;
+        bottom: -30rem;
+    }
+    .carousel-inner{
+        position: relative;
+        height: 100%;
+    }
+    .carousel-item{
+        position: relative;
+        height: 100%;
+    }
+    .oracleInspiration{
+        z-index: 10;
+        bottom: -4rem;
+        position: relative;
+        width: 75rem;
+        height: 25rem;
+    }
+    .carouselImage{
+        z-index: 5;
+        position: absolute;
+        height: 90%;
+        top: 0;
+        left: 0;
+    }
+    .carouselTextBox{
+        position: absolute;
+        width: 53%;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
 }
