@@ -18,6 +18,7 @@ body{
 #enchilada button{
     z-index: 30;
     visibility: visible;
+    height: 100%;
     width: 50%;
 }
 #navbarLostSpace{
@@ -85,16 +86,16 @@ body{
     #enchilada{
         visibility: hidden;
         background-color: #ba83e7;
-        height: 45rem;
+        height: auto;
     }
     .oracleInspiration{
         width: 100%;
-        height: 45rem;
+        height: auto;
     }
     .carouselTextBox{
         position: relative;
         width: 100%;
-        height: 65%;
+        height: auto;
     }
     #enchilada img{
         top: 0;
@@ -104,21 +105,17 @@ body{
 }
 
 @media (min-width: 576px) and (max-width: 767px){
-    #enchiladas{
-        position: relative;
-        z-index: 10;
-        visibility: visible;
-        background-color: #ba83e7;
-        height: 1rem;
+    #enchilada{
+        height: auto;
     }
     .oracleInspiration{
         width: 100%;
-        height: 45rem;
+        height: auto;
     }
     .carouselTextBox{
         position: relative;
         width: 100%;
-        height: 50%;
+        height: auto;
     }
     #enchilada img{
         width: 100%;
@@ -129,7 +126,7 @@ body{
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
     #enchilada{
-        height: 26rem;
+        height: auto;
     }
 
     #carouselDecorative{
