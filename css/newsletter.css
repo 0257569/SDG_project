@@ -12,6 +12,21 @@ body{
     height: 100px;
     background-color: var(--bruhgreen);
 }
+#enchilada img{
+    visibility: visible;
+}
+#enchilada button{
+    z-index: 30;
+    visibility: visible;
+    width: 50%;
+}
+#navbarLostSpace{
+    position: relative;
+    top: 0;
+    visibility: visible;
+    height: 3.3rem;
+    background-color: var(--fakeWhite);
+}
 #MasterContainer{
     position: relative;
     z-index: 10;
@@ -67,39 +82,89 @@ body{
     background-color: var(--fakeWhite);
 }
 @media (max-width: 576px) {
-    .carousel{
-        height: 13rem;
-        background-color: wheat;
+    #enchilada{
+        visibility: hidden;
+        background-color: #ba83e7;
+        height: 45rem;
+    }
+    .oracleInspiration{
+        width: 100%;
+        height: 45rem;
+    }
+    .carouselTextBox{
+        position: relative;
+        width: 100%;
+        height: 65%;
+    }
+    #enchilada img{
+        top: 0;
+        width: 100%;
+        visibility: visible;
     }
 }
 
-@media (min-width: 576px) {
-    .carousel{
-        height: 10rem;
+@media (min-width: 576px) and (max-width: 767px){
+    #enchiladas{
+        position: relative;
+        z-index: 10;
+        visibility: visible;
+        background-color: #ba83e7;
+        height: 1rem;
+    }
+    .oracleInspiration{
+        width: 100%;
+        height: 45rem;
+    }
+    .carouselTextBox{
+        position: relative;
+        width: 100%;
+        height: 50%;
+    }
+    #enchilada img{
+        width: 100%;
+        visibility: visible;
     }
 }
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .carousel{
-        height: 18rem;
+@media (min-width: 768px) and (max-width: 991px){
+    #enchilada{
+        height: 26rem;
+    }
+
+    #carouselDecorative{
+        position: absolute;
+        top: 3.3rem;
+        visibility: visible;
+        height: 26rem;
+        background-image: url(../imgs/newsletter/aesthetic.jpg);
+    }
+    .oracleInspiration{
+        z-index: 10;
+        bottom: -4rem;
+        position: relative;
+        width: 75rem;
+        height: 25rem;
+    }
+    .carouselImage{
+        z-index: 5;
+        position: absolute;
+        width: 60%;
+        height: 60%;
+        top: 0;
+        left: 0;
+    }
+    .carouselTextBox{
+        position: absolute;
+        width: 53%;
+        height: 70%;
+        bottom: 0;
+        right: 0;
     }
 }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-    .carousel{
-        height: 26rem;
-    }
-}
-/* 
-// X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-/* 
-// XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     #navbarLostSpace{
         position: relative;
         top: 0;
@@ -107,6 +172,155 @@ body{
         height: 3.3rem;
         background-color: var(--fakeWhite);
     }
+    #enchilada{
+        position: relative;
+        visibility: visible;
+        height: 32rem;
+    }
+    #carouselDecorative{
+        position: absolute;
+        top: 3.3rem;
+        visibility: visible;
+        height: 32rem;
+        background-image: url(../imgs/newsletter/aesthetic.jpg);
+    }
+    #newsSectionDecorative{
+        z-index: 0;
+        height: 25rem;
+        top: 35.3rem;
+        position: absolute;
+        visibility: visible;
+        background-color: var(--fakeWhite);
+    }
+    .carousel{
+        height: 32rem;
+    }
+    .sectionNews{
+        position: absolute;
+        bottom: -30rem;
+    }
+    .carousel-inner{
+        position: relative;
+        height: 100%;
+    }
+    .carousel-item{
+        position: relative;
+        height: 100%;
+    }
+    .oracleInspiration{
+        z-index: 10;
+        bottom: -4rem;
+        position: relative;
+        width: 75rem;
+        height: 25rem;
+    }
+    .carouselImage{
+        z-index: 5;
+        position: absolute;
+        height: 70%;
+        top: 0;
+        left: 0;
+    }
+    .carouselTextBox{
+        position: absolute;
+        width: 53%;
+        height: 70%;
+        bottom: 0;
+        right: 0;
+    }
+    #midPage{
+        z-index: 1;
+        visibility: visible;
+        height: 25rem;
+        background-color: #ba83e7;
+    }
+
+    #contenedorNoticias{
+        width: 60%;
+        left: -16.3rem;
+    }
+}
+/* 
+// X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #navbarLostSpace{
+        position: relative;
+        top: 0;
+        visibility: visible;
+        height: 3.3rem;
+        background-color: var(--fakeWhite);
+    }
+    #enchilada{
+        position: relative;
+        visibility: visible;
+        height: 32rem;
+    }
+    #carouselDecorative{
+        position: absolute;
+        top: 3.3rem;
+        visibility: visible;
+        height: 32rem;
+        background-image: url(../imgs/newsletter/aesthetic.jpg);
+    }
+    #newsSectionDecorative{
+        z-index: 0;
+        height: 25rem;
+        top: 35.3rem;
+        position: absolute;
+        visibility: visible;
+        background-color: var(--fakeWhite);
+    }
+    .carousel{
+        height: 32rem;
+    }
+    .sectionNews{
+        position: absolute;
+        bottom: -30rem;
+    }
+    .carousel-inner{
+        position: relative;
+        height: 100%;
+    }
+    .carousel-item{
+        position: relative;
+        height: 100%;
+    }
+    .oracleInspiration{
+        z-index: 10;
+        bottom: -4rem;
+        position: relative;
+        width: 75rem;
+        height: 25rem;
+    }
+    .carouselImage{
+        z-index: 5;
+        position: absolute;
+        height: 90%;
+        top: 0;
+        left: 0;
+    }
+    .carouselTextBox{
+        position: absolute;
+        width: 53%;
+        height: 90%;
+        bottom: 0;
+        right: 0;
+    }
+    #midPage{
+        z-index: 1;
+        visibility: visible;
+        height: 25rem;
+        background-color: #ba83e7;
+    }
+
+    #contenedorNoticias{
+        width: 60%;
+        left: -16.3rem;
+    }
+}
+/* 
+// XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
     #enchilada{
         position: relative;
         visibility: visible;
