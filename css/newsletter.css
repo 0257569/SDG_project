@@ -34,12 +34,6 @@ body{
     display: block;
     height: auto;
 }
-#navegacion{
-    z-index: 30;
-    position: fixed;
-    background-color: var(--fakeWhite);
-}
-
 .noticia{
     background-color: var(--fakeWhite) !important;
     position: relative;
