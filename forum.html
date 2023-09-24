@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="./css/forum.css" type="text/css">
     <link rel="stylesheet" href="./css/navbar.css" type="text/css">
 
+    <link rel="stylesheet" href="./css/forum.css" type="text/css">
     <!-- jQuery -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.min.js"></script>
 
@@ -69,8 +69,8 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg container-fluid" id="navegacion">
+        <div class="container">
             <a class="navbar-brand" href="#">Salud y Bienestar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -82,11 +82,11 @@
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" aria-current="page" href="newsletter.html">Newsletter</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="forum.html">Forum</a>
+                        <a class="nav-link" aria-current="page" href="forum.html">Forum</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link " aria-current="page" href="videogame.html">Videogame</a>
@@ -99,6 +99,7 @@
             </div>
         </div>
     </nav>
+    <div class="container-fluid" id="navbarLostSpace"></div>
     <div class="container containerVisual">
         <div class="row">
             <div class="col-7 col-sm-10">
