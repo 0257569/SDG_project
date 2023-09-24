@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url('../img_login/Health.jpg');
+    background-color: #b0e783;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,7 +16,7 @@ body {
 
 body::after {
     content: "";
-    background-image: url('../img_login/Health.jpg');
+    background-color: #b0e783;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
