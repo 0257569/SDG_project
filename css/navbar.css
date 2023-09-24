@@ -3,3 +3,10 @@
     position: fixed;
     background-color: var(--fakeWhite);
 }
+#navbarLostSpace{
+    position: relative;
+    top: 0;
+    visibility: visible;
+    height: 3.3rem;
+    background-color: var(--fakeWhite);
+}
