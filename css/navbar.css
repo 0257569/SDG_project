@@ -1,3 +1,11 @@
+:root{
+    --principal:#b0e783;
+    --complementario:#ba83e7;
+    --fakeWhite:#fffff6;
+    --lightestgreen:#eaf8d5;
+    --bruhgreen:#d3f2b4;
+    font-size: 16px;
+}
 #navegacion{
     z-index: 30;
     position: fixed;
@@ -9,4 +17,10 @@
     visibility: visible;
     height: 3.3rem;
     background-color: var(--fakeWhite);
+}
+.nav-link{
+    border-bottom: 2px solid var(--fakeWhite);
+}
+.nav-link:hover{
+    border-bottom: 2px solid black;
 }
