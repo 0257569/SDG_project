@@ -1,15 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 16px;
     background-color: #eaf8d5;
-}
-
-header {
-    background-color: #457b1d;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
 }
 
 h2 {
@@ -23,36 +14,17 @@ p {
     text-align: justify;
 }
 
-.container {
+.mainContainer {
+    position: relative;
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
     background-color: #f0f0f0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Estilos responsivos*/
-img {
+.container img {
     max-width: 25%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
-@media screen and (max-width: 768px) {
-
-    /* Estilos para pantallas pequeñas (tabletas y móviles) */
-    nav {
-        padding: 10px 0;
-        flex-direction: column;
-    }
-
-    nav a {
-        margin: 10px 0;
-    }
-
-    .container {
-        padding: 10px;
-    }
-}
