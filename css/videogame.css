@@ -1,8 +1,27 @@
 :root{
     --principal:#b0e783;
     --complementario:#ba83e7;
+    --graded07:#eaf8d5;
+    --graded08:#fffff6;
     font-size: 16px;
 }
+
+h1, h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 body{
-    background-color:  #eaf8d5;;
+    background-color:  #eaf8d5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.containerVisual{
+    padding: 1%;
+    max-width: 75rem;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: var(--graded08);
+    border-radius: 0.3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
