@@ -12,6 +12,16 @@ body{
     height: 100px;
     background-color: var(--bruhgreen);
 }
+footer{
+    margin-top: 1rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: var(--complementario);
+    text-decoration: none;
+}
 #enchilada img{
     visibility: visible;
 }
@@ -31,13 +41,16 @@ body{
     background-color: var(--fakeWhite) !important;
     position: relative;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;  
 }
 #contenedorNoticias{
     position: relative;
     padding-top: .5rem;
+    padding-bottom: .5rem;
     margin-top: 1rem;
+    margin-bottom: 1rem;
     height: auto;
     display: block;
     background-color: var(--principal);
