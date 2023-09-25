@@ -1,6 +1,7 @@
 body {
     font-size: 16px;
     background-color: #eaf8d5;
+    font-family: 'Roboto', sans-serif;
 }
 
 h2 {
@@ -17,7 +18,7 @@ p {
 .mainContainer {
     position: relative;
     max-width: 800px;
-    background-color: #f0f0f0;
+    background-color: #fffff6;
 }
 
 /*Estilos responsivos*/

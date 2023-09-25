@@ -2,21 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: url('../img_login/Health.jpg');
+    background-color: #eaf8d5;
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    overflow: hidden;
 }
 
 body::after {
     content: "";
-    background-image: url('../img_login/Health.jpg');
+    background-color: #eaf8d5;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -55,6 +54,8 @@ body::after {
 }
 
 .form-box {
+    background-color: #fffff6;
+    border-radius: 5px;
     position: relative;
     display: flex;
     align-items: center;
@@ -66,6 +67,7 @@ body::after {
 }
 
 .login-container {
+    padding: 40px;
     position: absolute;
     left: 4px;
     width: 500px;
@@ -75,6 +77,7 @@ body::after {
 }
 
 .register-container {
+    padding: 40px;
     position: absolute;
     right: -520px;
     width: 500px;
@@ -84,7 +87,7 @@ body::after {
 }
 
 .top span {
-    color: #fff;
+    color: black;
     font-size: small;
     padding: 10px 0;
     display: flex;
@@ -93,12 +96,12 @@ body::after {
 
 .top span a {
     font-weight: 500;
-    color: #fff;
+    color: black;
     margin-left: 5px;
 }
 
 header {
-    color: #fff;
+    color: black;
     font-size: 30px;
     text-align: center;
     padding: 10px 0 30px 0;
@@ -113,12 +116,11 @@ header {
     font-size: 15px;
     margin-top: .5rem;
     margin-bottom: .5rem;
-    background: rgba(255, 255, 255, 0.2);
-    color: #fff;
+    background: white;
+    color: black;
     height: 50px;
     width: 100%;
     padding: 0 10px 0 45px;
-    border: none;
     border-radius: 30px;
     outline: none;
     transition: .2s ease;
@@ -126,44 +128,44 @@ header {
 
 .input-field:hover,
 .input-field:focus {
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.75);
 }
 
 ::-webkit-input-placeholder {
-    color: #fff;
+    color: black;
 }
 
 .input-box i {
     position: relative;
     top: -35px;
     left: 17px;
-    color: #fff;
+    color: black;
 }
 
 .submit {
     margin-top: .5rem;
     font-size: 15px;
     font-weight: 500;
-    color: black;
+    color: white;
     height: 45px;
     width: 100%;
     border: none;
     border-radius: 30px;
     outline: none;
-    background: rgba(255, 255, 255, 0.7);
+    background: #ba83e7;
     cursor: pointer;
     transition: .3s ease-in-out;
 }
 
 .submit:hover {
-    background: rgba(255, 255, 255, 0.5);
+    background: #9749b8;
     box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
 }
 
 .two-col {
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: black;
     font-size: small;
     margin-top: 10px;
 }
@@ -175,7 +177,7 @@ header {
 
 .two label a {
     text-decoration: none;
-    color: #fff;
+    color: black;
 }
 
 .two label a:hover {
