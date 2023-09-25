@@ -15,7 +15,17 @@ body{
     background-color: var(--bruhgreen);
     font-family: 'Roboto', sans-serif;
 }
-
+.logo{
+    position: absolute;
+    display: block;
+    right: 0rem;
+    bottom: 0rem;
+    color: black;
+    visibility: hidden;
+}
+.oracleInspiration h2{
+    color: var(--footergreen);
+}
 #enchilada img{
     visibility: visible;
 }
@@ -388,5 +398,8 @@ body{
     #contenedorNoticias{
         width: 60%;
         left: -16.3rem;
+    }
+    .logo{
+        visibility: visible;
     }
 }
