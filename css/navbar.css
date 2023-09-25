@@ -24,3 +24,26 @@
 .nav-link:hover{
     border-bottom: 2px solid black;
 }
+footer{
+    background-color: var(--fakeWhite);
+    margin-top: 1rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    z-index: 100;
+    font-weight: 700;
+    color: var(--complementario);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--principal);
+}
+a::after{
+    color: var(--lightestgreen);
+}
+#footerMain{
+    margin-top: 1rem;
+    padding-top: 1rem;
+}

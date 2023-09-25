@@ -4,6 +4,8 @@
     --fakeWhite:#fffff6;
     --lightestgreen:#eaf8d5;
     --bruhgreen:#d3f2b4;
+    --footergreen:#81b757;
+    --extra:#63993a;
     font-size: 16px;
 }
 body{
@@ -13,16 +15,7 @@ body{
     background-color: var(--bruhgreen);
     font-family: 'Roboto', sans-serif;
 }
-footer{
-    margin-top: 1rem;
-}
-ul{
-    list-style: none;
-}
-a{
-    color: var(--complementario);
-    text-decoration: none;
-}
+
 #enchilada img{
     visibility: visible;
 }
@@ -30,7 +23,17 @@ a{
     z-index: 30;
     visibility: visible;
     height: 100%;
-    width: 50%;
+    width: 25%;
+}
+.carousel-control-prev-icon{
+    background-color: var(--extra);
+    position: relative;
+    left: -9rem;
+}
+.carousel-control-next-icon{
+    background-color: var(--extra);
+    position: relative;
+    right: -9rem;
 }
 #MasterContainer{
     position: relative;
