@@ -1,0 +1,181 @@
+<%- include("partials/headerForum"); %>
+<%- include("partials/navbar"); %>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a post</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture"
+                                class="pic-comment" />
+                        </div>
+                        <div class="col-10">
+                            <h5>Username</h5>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Topic">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="What's on your mind?" rows="4"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="formFile" class="form-label">Upload a picture</label>
+                                <input class="form-control" type="file" id="formFile" placeholder="Upload image">
+                              </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-addpost">PUBLISH</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container containerVisual">
+    <div class="row">
+        <div class="col-7 col-sm-10">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Topic" aria-label="Topic"
+                    aria-describedby="button-addon2">
+                <button type="button" class="btn btn-labeled btn-success btn-search">
+                    <span class="btn-label"><i class="fa fa-search"></i></span>Search</button>
+            </div>
+        </div>
+        <div class="col-5 col-sm-2 right-align">
+            <button type="button" class="btn btn-primary btn-addpost" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">NEW
+                POST</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <h1>Latest posts</h1>
+        </div>
+    </div>
+</div>
+<div class="post container containerVisual">
+    <div class="message">
+        <div class="row">
+            <div class="post-profile col-12 col-xl-1 col-sm-2 d-flex justify-content-sm-end justify-content-start">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-post" />
+            </div>
+            <div class="post-body col-12 col-xl-11 col-sm-10">
+                <h2>Username</h2>
+                <p>n days ago</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Orci eu lobortis elementum nibh tellus molestie. Convallis
+                    posuere morbi leo urna molestie at elementum eu. Sit amet consectetur adipiscing elit ut
+                    aliquam. Vitae turpis massa sed elementum tempus. Condimentum vitae sapien pellentesque
+                    habitant morbi tristique. In nulla posuere sollicitudin aliquam. Viverra nibh cras pulvinar
+                    mattis nunc sed blandit. Sed vulputate mi sit amet mauris commodo quis imperdiet. Blandit
+                    volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Vulputate mi sit
+                    amet mauris commodo.</p>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="row">
+            <div class="col-2 col-xl-1 right-align">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-comment" />
+            </div>
+            <div class="col-10 col-xl-11">
+                <input class="form-control form-control-sm" type="text" placeholder="Write a public comment"
+                    aria-label=".form-control-sm example">
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="comments">
+        <div class="row">
+            <div class="col-2 col-xl-1 right-align">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-comment" />
+            </div>
+            <div class="col-10 col-xl-11">
+                <h5>Username</h5>
+                <p class="text-comment">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="post container containerVisual">
+    <div class="message">
+        <div class="row">
+            <div class="post-profile col-12 col-xl-1 col-sm-2 d-flex justify-content-sm-end justify-content-start">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-post" />
+            </div>
+            <div class="post-body col-12 col-xl-11 col-sm-10">
+                <h2>Username</h2>
+                <p>n days ago</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.</p>
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+        <div class="row">
+            <div class="col-2 col-xl-1 right-align">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-comment" />
+            </div>
+            <div class="col-10 col-xl-11">
+                <input class="form-control form-control-sm" type="text" placeholder="Write a public comment"
+                    aria-label=".form-control-sm example">
+
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="comments">
+        <div class="row">
+            <div class="col-2 col-xl-1 right-align">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-comment" />
+            </div>
+            <div class="col-10 col-xl-11">
+                <h5>Username</h5>
+                <p class="text-comment">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                    sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                    est laborum.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2 col-xl-1 right-align">
+                <img src="./imgs/forum/profile-pic.jpg" alt="Default profile picture" class="pic-comment" />
+            </div>
+            <div class="col-10 col-xl-11">
+                <h5>Username</h5>
+                <p class="text-comment">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("partials/footer"); %>
