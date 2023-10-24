@@ -18,6 +18,9 @@
     height: 3.3rem;
     background-color: var(--fakeWhite);
 }
+#navegacion img{
+    height: 20px;
+}
 .nav-link{
     border-bottom: 2px solid var(--fakeWhite);
 }
