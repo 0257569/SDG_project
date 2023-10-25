@@ -27,7 +27,7 @@ app.route("/forum")
 
 app.route("/newsletter")
 .get((req, res) =>{
-    //Renderizar newsletter
+    res.render("newsletter");
 });
 
 app.route("/videogame")
