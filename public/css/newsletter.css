@@ -36,14 +36,14 @@ body{
     width: 25%;
 }
 .carousel-control-prev-icon{
+    visibility: hidden;
     background-color: var(--extra);
     position: relative;
-    left: -9rem;
 }
 .carousel-control-next-icon{
+    visibility: hidden;
     background-color: var(--extra);
     position: relative;
-    right: -9rem;
 }
 #MasterContainer{
     position: relative;
@@ -139,6 +139,16 @@ body{
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px){
+    .carousel-control-prev-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+    }
+    .carousel-control-next-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+    }
     #enchilada{
         height: auto;
     }
@@ -176,6 +186,16 @@ body{
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199px) {
+    .carousel-control-prev-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+    }
+    .carousel-control-next-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+    }
     #navbarLostSpace{
         position: relative;
         top: 0;
@@ -254,6 +274,18 @@ body{
 /* 
 // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+    .carousel-control-prev-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+        left: -9rem;
+    }
+    .carousel-control-next-icon{
+        visibility: visible;
+        background-color: var(--extra);
+        position: relative;
+        right: -9rem;
+    }
     #navbarLostSpace{
         position: relative;
         top: 0;
