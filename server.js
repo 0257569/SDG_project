@@ -84,6 +84,22 @@ app.post('/post', (req, res) => {
     res.redirect('/forum');
 });
 
+app.post('/postComment', (req, res) => {
+  const content = req.body.postComment;
+  const indexPost = req.body.indexPost;
+  console.log(indexPost);
+  //For now I wont be handling images or post it them through the server as this will be done from the database :)
+
+  const comment = {
+    author: username,
+    text: content,
+    createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Comment creation timestamp
+  };
+  console.log(comment);
+  posts[indexPost].comments.push(comment);
+  res.redirect('/forum');
+});
+
 app.route("/newsletter")
 .get((req, res) =>{
     res.render("newsletter");
