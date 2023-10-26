@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require ("body-parser");
 const multer = require('multer');
+const moment = require('moment');
 
 const app = express();
 const upload = multer({ dest: 'uploads/' });
@@ -20,15 +21,15 @@ const posts = [
         {
           author: 'User2',
           text: 'Welcome! Excited to be here.',
-          createdAt: new Date(), // Comment creation timestamp
+          createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Comment creation timestamp
         },
         {
           author: 'User3',
           text: 'Thanks for starting this community!',
-          createdAt: new Date(), // Comment creation timestamp
+          createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Comment creation timestamp
         },
       ],
-      createdAt: new Date(), // Post creation timestamp
+      createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Post creation timestamp
     },
     {
       author: 'User4',
@@ -39,10 +40,10 @@ const posts = [
         {
           author: 'User5',
           text: 'Looking forward to some interesting discussions!',
-          createdAt: new Date(), // Comment creation timestamp
+          createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Comment creation timestamp
         },
       ],
-      createdAt: new Date(), // Post creation timestamp
+      createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'), // Post creation timestamp
     },
   ];
   
@@ -71,15 +72,14 @@ app.post('/post', upload.single('image'), (req, res) => {
     const topic = req.body.topic;
     const content = req.body.content;
     //For now I wont be handling images or post it them through the server as this will be done from the database :)
-    const image = req.file;
   
     const post = {
         author: username,
         topic: topic,
         content: content,
-        image: image.filename,
+        image: 'bommmba.jpg',
         comments: [],
-        createdAt: new Date() 
+        createdAt: moment(new Date()).format('MMM DD, YYYY, HH:mm:ss'),
     };
     console.log(post);
     posts.push(post);
