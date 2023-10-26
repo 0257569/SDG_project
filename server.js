@@ -1,10 +1,8 @@
 const express = require('express');
 const bodyParser = require ("body-parser");
-const multer = require('multer');
 const moment = require('moment');
 
 const app = express();
-const upload = multer({ dest: 'uploads/' });
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.engine("ejs", require("ejs").renderFile);
@@ -68,7 +66,7 @@ app.route("/forum")
     res.render("forum", {posts: posts, username: username});
 });
 
-app.post('/post', upload.single('image'), (req, res) => {
+app.post('/post', (req, res) => {
     const topic = req.body.topic;
     const content = req.body.content;
     //For now I wont be handling images or post it them through the server as this will be done from the database :)
