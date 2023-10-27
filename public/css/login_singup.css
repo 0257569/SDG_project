@@ -1,3 +1,14 @@
+:root{
+    --principal:#b0e783;
+    --complementario:#ba83e7;
+    --fakeWhite:#fffff6;
+    --lightestgreen:#eaf8d5;
+    --bruhgreen:#d3f2b4;
+    --footergreen:#81b757;
+    --extra:#63993a;
+    font-size: 16px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +17,7 @@
 }
 
 body {
-    background-color: #eaf8d5;
+    background: linear-gradient(150deg, var(--extra), var(--bruhgreen), var(--fakeWhite));
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-position: center;

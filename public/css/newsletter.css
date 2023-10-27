@@ -9,10 +9,8 @@
     font-size: 16px;
 }
 body{
-    z-index: -1;
-    width: 100%;
-    height: 100px;
-    background-color: var(--bruhgreen);
+
+    background: linear-gradient(100deg, var(--extra), var(--bruhgreen), var(--fakeWhite));
     font-family: 'Roboto', sans-serif;
 }
 #basura{

@@ -1,4 +1,11 @@
 :root{
+    --principal:#b0e783;
+    --complementario:#ba83e7;
+    --fakeWhite:#fffff6;
+    --lightestgreen:#eaf8d5;
+    --bruhgreen:#d3f2b4;
+    --footergreen:#81b757;
+    --extra:#63993a;
     --main:#b0e783;
     --complementary:#ba83e7;
     --complementary02: #9749b8;
@@ -9,7 +16,8 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
-    background-color: var(--graded07);
+    background: linear-gradient(150deg, var(--extra), var(--bruhgreen), var(--fakeWhite));
+    /* background-color: var(--graded07); */
 }
 
 .containerVisual{
