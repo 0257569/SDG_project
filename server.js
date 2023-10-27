@@ -100,9 +100,11 @@ app.post('/postComment', (req, res) => {
   res.redirect('/forum');
 });
 
+const news = require('./news.json');
+
 app.route("/newsletter")
 .get((req, res) =>{
-    res.render("newsletter");
+    res.render("newsletter", {news: news});
 });
 
 app.route("/videogame")
