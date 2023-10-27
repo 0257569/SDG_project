@@ -15,6 +15,11 @@ body{
     background-color: var(--bruhgreen);
     font-family: 'Roboto', sans-serif;
 }
+#basura{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
 .logo{
     position: absolute;
     display: block;
@@ -69,11 +74,6 @@ body{
     display: block;
     background-color: var(--principal);
 }
-#newsSections{
-    width: 100%;
-    position: relative;
-}
-
 #newsTitle{
     background-color: var(--fakeWhite) !important;
     position: relative;
@@ -356,82 +356,6 @@ body{
         background-color: #ba83e7;
     }
 
-    #contenedorNoticias{
-        width: 60%;
-        left: -16.3rem;
-    }
 }
 /* 
 // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    #enchilada{
-        position: relative;
-        visibility: visible;
-        height: 32rem;
-    }
-    #carouselDecorative{
-        position: absolute;
-        top: 3.3rem;
-        visibility: visible;
-        height: 32rem;
-        background-image: url(../imgs/newsletter/aesthetic.jpg);
-    }
-    #newsSectionDecorative{
-        z-index: 0;
-        height: 25rem;
-        top: 35.3rem;
-        position: absolute;
-        visibility: visible;
-        background-color: var(--fakeWhite);
-    }
-    .carousel{
-        height: 32rem;
-    }
-    .sectionNews{
-        position: absolute;
-        bottom: -30rem;
-    }
-    .carousel-inner{
-        position: relative;
-        height: 100%;
-    }
-    .carousel-item{
-        position: relative;
-        height: 100%;
-    }
-    .oracleInspiration{
-        z-index: 10;
-        bottom: -4rem;
-        position: relative;
-        width: 75rem;
-        height: 25rem;
-    }
-    .carouselImage{
-        z-index: 5;
-        position: absolute;
-        height: 90%;
-        top: 0;
-        left: 0;
-    }
-    .carouselTextBox{
-        position: absolute;
-        width: 53%;
-        height: 90%;
-        bottom: 0;
-        right: 0;
-    }
-    #midPage{
-        z-index: 1;
-        visibility: visible;
-        height: 25rem;
-        background-color: #ba83e7;
-    }
-
-    #contenedorNoticias{
-        width: 60%;
-        left: -16.3rem;
-    }
-    .logo{
-        visibility: visible;
-    }
-}
