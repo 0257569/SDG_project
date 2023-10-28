@@ -1,4 +1,8 @@
-<%- include("partials/headerNewsletter"); %>
+<%- include("partials/upperHeader"); %>
+<link rel="stylesheet" href="./css/newsletter.css" type="text/css">
+<%- include("partials/lowerHeader"); %>
+<body id="bodyDecorative">
+  <div class="container-fluid" id="carouselDecorative"></div>
 <%- include("partials/navbar"); %>
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
 <!-- ------------------------------------------------------------------------------------------------------------------------------ -->
@@ -71,7 +75,7 @@
                         <h3><%=news[i].Title%></h3>
                       </div>
                       <div class="row nonCellphoneCompatible">
-                        <p><%=news[i].Text%></p>
+                        <p><%=news[i].ShortDescription%></p>
                       </div>
                       <div class="row">
                         <div class="col col-md-4 offset-md-8">

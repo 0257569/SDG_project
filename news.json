@@ -4,42 +4,49 @@
         "Author": "John Doe",
         "Title": "José Francisco López-Gil, nutricionista:",
         "Text": "“Hemos visto un aumento de la obsesión compulsiva por la comida saludable con las redes sociales”",
-        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/"
+        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/",
+        "ShortDescription": "Read this please"
     },
     {
         "Image": "./imgs/newsletter/cbomba.jpg",
         "Author": "John Doe",
         "Title": "Test",
-        "Text": "“bla bla bla bla bla bla bla”",
-        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/"
+        "Text": "Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no property exercise of. Dissimilar comparison no terminated devonshire no literature on. Say most yet head room such just easy.",
+        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/",
+        "ShortDescription": "Do not read this one"
     },
     {
         "Image": "../imgs/newsletter/sugar_cravings.webp",
         "Author": "",
         "Title": "How to Stop a Holiday Sugar Binge and Reboot",
         "Text": "Tis the season for sugar crashes. Try these tested tips to avoid over-doing the sugar and being kind to yourself when you do.",
-        "URL": "https://elpais.com/salud-y-bienestar/2023-03-14/jose-francisco-lopez-gil-nutricionista-hemos-visto-un-aumento-de-la-obsesion-compulsiva-por-la-comida-saludable-con-las-redes-sociales.html"
-    },      
+        "URL": "https://elpais.com/salud-y-bienestar/2023-03-14/jose-francisco-lopez-gil-nutricionista-hemos-visto-un-aumento-de-la-obsesion-compulsiva-por-la-comida-saludable-con-las-redes-sociales.html",
+        "ShortDescription": "Chat gpt should do this"
+    },
     {
         "Image": "./imgs/newsletter/cbomba.jpg",
         "Author": "John Doe",
         "Title": "Test",
-        "Text": "“bla bla bla bla bla bla bla”",
-        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/"
+        "Text": "Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no property exercise of. Dissimilar comparison no terminated devonshire no literature on. Say most yet head room such just easy.",
+        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/",
+        "ShortDescription": "Am I a good frontend"
     },
     {
         "Image": "../imgs/newsletter/coconut_oil.webp",
         "Author": "",
         "Title": "Coconut Oil Is Not A Villain",
         "Text": "The American Heart Association's revised position on coconut oil may be new, but the logic behind it is old.",
-        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/"
-    },  
+        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/",
+        "ShortDescription": "This is not that bad"
+    },
     {
         "Image": "./imgs/newsletter/cbomba.jpg",
         "Author": "John Doe",
         "Title": "Test",
-        "Text": "“bla bla bla bla bla bla bla”",
-        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/"
+        "Text": "Its had resolving otherwise she contented therefore. Afford relied warmth out sir hearts sister use garden. Men day warmth formed admire former simple. Humanity declared vicinity continue supplied no an. He hastened am no property exercise of. Dissimilar comparison no terminated devonshire no literature on. Say most yet head room such just easy.",
+        "URL": "https://www.cleaneatingmag.com/clean-diet/food-health-news/is-coconut-oil-bad-for-you-american-heart-association-study/",
+        "ShortDescription": "Finally a good text"
     }
-  ]
+]
+
   
