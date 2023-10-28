@@ -13,19 +13,6 @@ body{
     background: linear-gradient(100deg, var(--extra), var(--bruhgreen), var(--fakeWhite));
     font-family: 'Roboto', sans-serif;
 }
-#basura{
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-}
-.logo{
-    position: absolute;
-    display: block;
-    right: 0rem;
-    bottom: 0rem;
-    color: black;
-    visibility: hidden;
-}
 .oracleInspiration h2{
     color: var(--footergreen);
 }
@@ -56,14 +43,12 @@ body{
 }
 .noticia{
     background-color: var(--fakeWhite) !important;
-    position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
     padding-top: .5rem;
     padding-bottom: .5rem;  
 }
 #contenedorNoticias{
-    position: relative;
     padding-top: .5rem;
     padding-bottom: .5rem;
     margin-top: 1rem;
@@ -71,12 +56,6 @@ body{
     height: auto;
     display: block;
     background-color: var(--principal);
-}
-#newsTitle{
-    background-color: var(--fakeWhite) !important;
-    position: relative;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 
 .oracleInspiration{
@@ -95,6 +74,9 @@ body{
     background-color: var(--fakeWhite);
 }
 @media (max-width: 576px) {
+    .nonCellphoneCompatible{
+        display: none ;
+    }
     #enchilada{
         visibility: hidden;
         background-color: #ba83e7;
@@ -215,9 +197,6 @@ body{
     }
     #newsSectionDecorative{
         z-index: 0;
-        height: 25rem;
-        top: 35.3rem;
-        position: absolute;
         visibility: visible;
         background-color: var(--fakeWhite);
     }
@@ -256,17 +235,6 @@ body{
         height: 70%;
         bottom: 0;
         right: 0;
-    }
-    #midPage{
-        z-index: 1;
-        visibility: visible;
-        height: 25rem;
-        background-color: #ba83e7;
-    }
-
-    #contenedorNoticias{
-        width: 60%;
-        left: -16.3rem;
     }
 }
 /* 
@@ -347,13 +315,4 @@ body{
         bottom: 0;
         right: 0;
     }
-    #midPage{
-        z-index: 1;
-        visibility: visible;
-        height: 25rem;
-        background-color: #ba83e7;
-    }
-
 }
-/* 
-// XX-Large devices (larger desktops, 1400px and up) */
