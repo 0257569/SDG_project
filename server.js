@@ -149,6 +149,34 @@ app.route("/newsletter")
     res.render("newsletter", {news: news});
 });
 
+app.post('/newNews', upload.single('Image'), (req, res) => {
+  console.log(req.body.Title);
+  const title = req.body.Title;
+  const text = req.body.Text;
+  const url = req.body.URL;
+  const shortD = req.body.ShortDescription
+  const newDataToAppend = {
+    Image: req.file ? `/uploads/${req.file.filename}` : null,//Here if a file is received then it will save in the json object the route to teh alredy uploaded img in uploads
+    Author: "",
+    // New author needs the database of users, thats why it is empty
+    Title: title,
+    Text: text,
+    URL: url,
+    ShortDescription: shortD
+};
+news.push(newDataToAppend);
+fs.writeFile('./news.json', JSON.stringify(news, null, 2), 'utf8', (err) => {
+  if (err) {
+    console.error('Error writing news to JSON file:', err);
+  } else {
+    console.log('News updated in JSON file.');
+  }
+});
+
+  res.redirect('/newsletter');
+});
+
+
 app.route("/videogame")
 .get((req, res) =>{
     //Renderizar videogame
