@@ -29,7 +29,7 @@
 }
 footer{
     background-color: var(--fakeWhite);
-    margin-top: 1rem;
+    margin-top: auto;
 }
 ul{
     list-style: none;
@@ -47,6 +47,11 @@ a::after{
     color: var(--lightestgreen);
 }
 #footerMain{
+    margin-top: auto;
     margin-top: 1rem;
     padding-top: 1rem;
+}
+
+#footerMain h3{
+    color: var(--complementario);
 }
