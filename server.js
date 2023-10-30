@@ -23,7 +23,10 @@ app.route("/")
 
 app.route("/login")
 .get((req, res) =>{
-    //Renderizar login
+  res.render("login_singup");
+}) 
+.post((req, res) => {
+  res.redirect("/");
 });
 
 // Serve images from the "uploads" directory
@@ -176,10 +179,12 @@ fs.writeFile('./news.json', JSON.stringify(news, null, 2), 'utf8', (err) => {
   res.redirect('/newsletter');
 });
 
-
 app.route("/videogame")
-.get((req, res) =>{
-    //Renderizar videogame
+.get((req, res) => {
+  res.render("videogame");
+})
+.post((req, res) => {
+  res.redirect("/");
 });
 
 app.use((err, req, res, next)=>{

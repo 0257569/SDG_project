@@ -1,11 +1,11 @@
-:root{
-    --principal:#b0e783;
-    --complementario:#ba83e7;
-    --fakeWhite:#fffff6;
-    --lightestgreen:#eaf8d5;
-    --bruhgreen:#d3f2b4;
-    --footergreen:#81b757;
-    --extra:#63993a;
+:root {
+    --principal: #b0e783;
+    --complementario: #ba83e7;
+    --fakeWhite: #fffff6;
+    --lightestgreen: #eaf8d5;
+    --bruhgreen: #d3f2b4;
+    --footergreen: #81b757;
+    --extra: #63993a;
     font-size: 16px;
 }
 
@@ -41,7 +41,6 @@ body::after {
     align-items: center;
     min-height: 100vh;
 }
-
 
 .link:hover,
 .active {
