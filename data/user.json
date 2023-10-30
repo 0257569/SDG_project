@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Emiliano Flores",
+    "username": "eselemu",
+    "email": "eselemu@example.com",
+    "password": "password123"
+  },
+  {
+    "name": "Jesus Abel",
+    "username": "JesusDraco",
+    "email": "jesusabel@gmail.com",
+    "password": "normal1234"
+  },
+  {
+    "name": "Emilio Ibarra",
+    "username": "Emilio",
+    "email": "emilio@gmail.com",
+    "password": "password1234"
+  },
+  {
+    "name": "Diego Pallares",
+    "username": "ElBabo",
+    "email": "elbabo@gmail.com",
+    "password": "diego1234"
+  }
+]

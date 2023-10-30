@@ -3,7 +3,6 @@
 <%- include("partials/lowerHeader"); %>
  <body>
     <%- include("partials/navbar"); %>
-    <div class="container-fluid" id="navbarLostSpace"></div>
     <div class="cont">
         <!-- Form box -->
         <div class="form-box">
@@ -13,13 +12,13 @@
                     <span>Don't have an account? <a href="#register">Sign Up</a></span>
                     <header>Login</header>
                 </div>
-                <form>
+                <form method="post" action="/login">
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Username or Email">
+                        <input type="text" class="input-field" name="username" placeholder="Username or Email">
                         <i class="bx bx-user"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
+                        <input type="password" class="input-field" name="password" placeholder="Password">
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     <div class="input-box">
@@ -42,23 +41,23 @@
                     <span>Have an account? <a href="#login">Login</a></span>
                     <header>Sign Up</header>
                 </div>
-                <form>
+                <form method="post" action="/signup">
                     <div class="two-forms">
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Firstname">
+                            <input type="text" class="input-field" name="name" placeholder="Name">
                             <i class="bx bx-user"></i>
                         </div>
                         <div class="input-box">
-                            <input type="text" class="input-field" placeholder="Lastname">
+                            <input type="text" class="input-field" name="username" placeholder="Username">
                             <i class="bx bx-user"></i>
                         </div>
                     </div>
                     <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Email">
+                        <input type="text" class="input-field" name="email" placeholder="Email">
                         <i class="bx bx-envelope"></i>
                     </div>
                     <div class="input-box">
-                        <input type="password" class="input-field" placeholder="Password">
+                        <input type="password" class="input-field" name="password" placeholder="Password">
                         <i class="bx bx-lock-alt"></i>
                     </div>
                     <div class="input-box">

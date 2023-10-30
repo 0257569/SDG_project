@@ -1,5 +1,6 @@
 const express = require('express');
-const bodyParser = require ("body-parser");
+const bodyParser = require("body-parser");
+const session = require('express-session');
 const moment = require('moment');
 const multer = require('multer');
 const path = require('path');
@@ -9,9 +10,17 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 app.engine("ejs", require("ejs").renderFile);
-app.set("view engine", "ejs");  
+app.set("view engine", "ejs"); 
+app.use(session({
+  secret: 'your-secret-key',
+  resave: true,
+  saveUninitialized: true
+})); 
 
 var username = "eselemu";
+
+const userFilePath = "./data/user.json";
+const user = require(userFilePath);
 
 app.route("/")
 .get((req, res) =>{
@@ -21,13 +30,68 @@ app.route("/")
     res.redirect("/");
 });
 
+app.route("/signup")
+  .get((req, res) => {
+    res.render("login_singup", { action: 'signup' });
+  })
+  .post((req, res) => {
+    // Recopila los datos del formulario de registro
+    const newUser = {
+      name: req.body.name,
+      username: req.body.username,
+      email: req.body.email,
+      password: req.body.password,
+    };
+
+    // Verifica si el usuario ya existe
+    const userExists = user.some(user => user.username === newUser.username);
+
+    if (userExists) {
+      return res.status(400).send("User already exists");
+    }
+
+    // Agrega el nuevo usuario al array
+    user.push(newUser);
+
+    // Guarda los usuarios en el archivo JSON
+    fs.writeFile(userFilePath, JSON.stringify(user, null, 2), 'utf8', (err) => {
+      if (err) {
+        console.error('Error writing users:', err);
+        return res.status(500).send('Server Error');
+      }
+      req.session.username = newUser.username; // Inicia sesión al usuario registrado
+      res.redirect("/forum");
+    });
+  });
+
 app.route("/login")
+  .get((req, res) => {
+    res.render("login_singup", { action: 'login' });
+  })
+  .post((req, res) => {
+    const inputUsername = req.body.username;
+    const inputPassword = req.body.password;
+
+    // Verifica las credenciales del usuario
+    //const user = user.find(user => user.username === inputUsername);
+    const foundUser = user.find(u => u.username === inputUsername);
+
+
+    if (foundUser && foundUser.password === inputPassword) {
+      req.session.username = inputUsername; // Inicia sesión al usuario
+      res.redirect("/forum");
+    } else {
+      res.status(401).send("Login failed");
+    }
+  });
+
+/*app.route("/login")
 .get((req, res) =>{
   res.render("login_singup");
 }) 
 .post((req, res) => {
   res.redirect("/");
-});
+});*/
 
 // Serve images from the "uploads" directory
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
