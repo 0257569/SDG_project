@@ -15,7 +15,7 @@ var username = "eselemu";
 
 app.route("/")
 .get((req, res) =>{
-    //Renderizar index
+  res.render("index");
 })
 .post((req, res) =>{
     res.redirect("/");
