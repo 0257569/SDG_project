@@ -1,6 +1,7 @@
 :root{
     --principal:#b0e783;
     --complementario:#ba83e7;
+    --complementary02: #9749b8;
     --fakeWhite:#fffff6;
     --lightestgreen:#eaf8d5;
     --bruhgreen:#d3f2b4;
@@ -72,6 +73,20 @@ body{
     display: block;
     visibility: visible;
     background-color: var(--fakeWhite);
+}
+
+.btn-purple{
+    background-color: var(--complementario);
+    border-color: var(--complementario);
+}
+
+
+.btn-purple:hover,
+.btn-purple:active {
+    background-color: var(--complementary02);
+    border-color: var(--complementary02);
+    color: #fff; /* Set text color for better visibility on the background */
+    outline: none; /* Remove the blue outline when focused (optional) */
 }
 @media (max-width: 576px) {
     .nonCellphoneCompatible{
